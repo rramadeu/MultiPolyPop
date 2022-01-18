@@ -1,6 +1,9 @@
 # diaQTLSimulate
 Wrapper R package to coordinate simulations for classic breeder mating designs in outcrossing plants. It also simulates genotypic data from GBS. This package relies on genotypic simulations from `PedigreeSim` and uses some `updog` package functions for the simulation of the genotypes and GBS data. To use `diaQTLSimulate` you need to have Java installed in your machine (https://java.com/en/download/help/download_options.html). If you use this package you also should cite `PedigreeSim` and `updog` articles, please cite them properly.
 
+# Disclaimer
+This software was originally called `PedigreeSimR` and it has been renamed for `diaQTLSimulate`. Please note that `diaQTLSimulate` and this repository are not affiliated with `PedigreeSim` software or its authors. If you are looking for the PedigreeSim software please go to https://www.wur.nl/en/show/Software-PedigreeSim.htm.
+
 # Citation
 
 I created `diaQTLSimulate` as an auxiliary package to do the simulations for these two manuscripts:
