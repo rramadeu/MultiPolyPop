@@ -1,15 +1,15 @@
 # diaQTLSimulation
-Wrapper R package to coordinate simulations for classic breeder mating designs in outcrossing plants. It also simulates genotypic data from GBS. This package relies on genotypic simulations from `PedigreeSim` and uses some `updog` package functions for the simulation of the genotypes and GBS data. To use PedigreeSimR you need to have Java installed in your machine (https://java.com/en/download/help/download_options.html). Please cite them properly. If you use this package you also should cite `PedigreeSim` and `updog` articles.
+Wrapper R package to coordinate simulations for classic breeder mating designs in outcrossing plants. It also simulates genotypic data from GBS. This package relies on genotypic simulations from `PedigreeSim` and uses some `updog` package functions for the simulation of the genotypes and GBS data. To use `diaQTLSimulation` you need to have Java installed in your machine (https://java.com/en/download/help/download_options.html). Please cite them properly. If you use this package you also should cite `PedigreeSim` and `updog` articles.
 
 # Citation
 
-I created PedigreeSimR as an auxiliary package to do the simulations for these two manuscripts (pre-prints):
+I created `diaQTLSimulation` as an auxiliary package to do the simulations for these two manuscripts:
 
-Amadeu, R. R., Munoz, P., Zheng, C., & Endelman, J. B. (2020). QTL Mapping in Outbred Tetraploid (and Diploid) Diallel Populations. bioRxiv. [https://doi.org/10.1101/2020.12.18.423479](https://doi.org/10.1101/2020.12.18.423479)
+Amadeu, R. R., Munoz, P., Zheng, C., & Endelman, J. B. (2021). QTL Mapping in Outbred Tetraploid (and Diploid) Diallel Populations. Genetics, 219(3). [https://doi.org/10.1093/genetics/iyab124](https://doi.org/10.1093/genetics/iyab124)
 
-Zheng, C., Amadeu, R. R., Munoz, P., & Endelman, J. B. (2020). Haplotype reconstruction in connected tetraploid F1 populations. bioRxiv. [https://doi.org/10.1101/2020.12.18.423519](https://doi.org/10.1101/2020.12.18.423519)
+Zheng, C., Amadeu, R. R., Munoz, P., & Endelman, J. B. (2021). Haplotype reconstruction in connected tetraploid F1 populations. Genetics, 219(2). [https://doi.org/10.1093/genetics/iyab106](https://doi.org/10.1093/genetics/iyab106)
 
-As there is no proper manuscript, you can cite either of those two pre-prints as reference source by now.
+As there is no proper manuscript for this package, you can cite either of those two pre-prints as reference source by now. If you use this package in your research, you also should cite `PedigreeSim` and `updog` articles as follow.
 
 # References:
 
