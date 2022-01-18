@@ -9,7 +9,7 @@ Amadeu, R. R., Munoz, P., Zheng, C., & Endelman, J. B. (2021). QTL Mapping in Ou
 
 Zheng, C., Amadeu, R. R., Munoz, P., & Endelman, J. B. (2021). Haplotype reconstruction in connected tetraploid F1 populations. Genetics, 219(2). [https://doi.org/10.1093/genetics/iyab106](https://doi.org/10.1093/genetics/iyab106)
 
-As there is no proper manuscript for this package, you can cite either of those two pre-prints as reference source by now. If you use this package in your research, you also should cite `PedigreeSim` and `updog` articles as follow.
+As there is no proper manuscript for this package, you can cite either of those two articles as reference source. If you use this package in your research, you also should cite `PedigreeSim` and `updog` articles as follow.
 
 # References:
 
