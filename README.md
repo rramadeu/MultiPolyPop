@@ -1,5 +1,5 @@
-# PedigreeSimR
-Wrapper R package to coordinate `PedigreeSim` simulations for classic breeder mating designs in outcrossing plants. It also simulates genotypic data from GBS. This package uses some `updog` package functions for the simulation of the genotypes and GBS data. To use PedigreeSimR you need to have Java installed in your machine (https://java.com/en/download/help/download_options.html).
+# diaQTLSimulation
+Wrapper R package to coordinate simulations for classic breeder mating designs in outcrossing plants. It also simulates genotypic data from GBS. This package relies on genotypic simulations from `PedigreeSim` and uses some `updog` package functions for the simulation of the genotypes and GBS data. To use PedigreeSimR you need to have Java installed in your machine (https://java.com/en/download/help/download_options.html). Please cite them properly. If you use this package you also should cite `PedigreeSim` and `updog` articles.
 
 # Citation
 
@@ -27,9 +27,9 @@ Gerard D., & Ferrão L. (2020). Priors for Genotyping Polyploids. Bioinformatics
 
 # Basic usage in R
 ```R
-## Installing this PedigreeSimR package
-devtools::install_github("rramadeu/PedigreeSimR")
-library(PedigreeSimR)
+## Installing this diaQTLSimulation package
+devtools::install_github("rramadeu/diaQTLSimulation")
+library(diaQTLSimulation)
 
 ## Creating a fake map (here you add a real map with haplotypes)
 map = 1:100
@@ -83,8 +83,8 @@ pedigreesimR(map,haplotypes,pedigree,ploidy=4,GBS=TRUE,GBSavgdepth = 60,GBSseq =
 
 # Simulation of QTL effect and genome scan internally with diaQTL
 ```R
-setwd("~/Documents/PedigreeSim_R_Example") #choose a folder for the simulations
-library(PedigreeSimR)
+setwd("~/Documents/diaQTLSimulation_Example") #choose a folder for the simulations
+library(diaQTLSimulation)
 
 ## Simulating a scenario of 3 parents, autotetraploid, 200 individuals, 0.3 QTL h2
 ## Setting parameters
@@ -107,17 +107,17 @@ QTLh2 = 0.3 #if interested in FPR investigation, set QTLh2 to 0
 ## Simulation
 haplotypes = fake_haplo(n=50,m=length(map),seed=1234)
 pedigree = diallel_pedigree(parents=parents,popsize=popsize)
-pedigreesimR(map,haplotypes,pedigree,ploidy=ploidy,workingfolder = "PedigreeSimR_files")
+pedigreesimR(map,haplotypes,pedigree,ploidy=ploidy,workingfolder = "diaQTLSimulation_files")
 QTLsim(parents=parents,
        ploidy=ploidy,
        workingfolder="PedigreeSimR_files",
        QTLmarker=NULL,
        QTLh2=QTLh2,
        run_diaQTL=FALSE) #FALSE if just interested in creating diaQTL inputs
-## "PedigreeSimR_files" folder is now populated with the files necessary for PolyOrigin sofware (`polyorigin` prefix) and for diaQTL software (`QTL` prefix). 
+## "diaQTLSimulation_files" folder is now populated with the files necessary for PolyOrigin sofware (`polyorigin` prefix) and for diaQTL software (`QTL` prefix). 
 
 ## To perform genome scan with diaQTL:
-setwd("~/Documents/PedigreeSim_R_Example/PedigreeSimR_files")
+setwd("~/Documents/diaQTLSimulation_Example/diaQTLSimulation_files")
 library(diaQTL)
 data1 <- read_data(genofile="QTLgeno.csv",
                    pedfile="QTLped.csv",
@@ -129,10 +129,10 @@ ans <- scan1(data=data1,trait="pheno1",n.core=1,dominance = 1)
 scan1_summary(ans)
 
 ## Or: read_data, set_params, scan1, scan1_summary functions are encapsulated within QTLsim function when run_diaQTL=TRUE
-setwd("~/Documents/PedigreeSim_R_Example/")
+setwd("~/Documents/diaQTLSimulation_Example/")
 QTLsim(parents=parents,
        ploidy=ploidy,
-       workingfolder="PedigreeSimR_files",
+       workingfolder="diaQTLSimulation_files",
        QTLmarker=NULL,
        QTLh2=QTLh2,
        run_diaQTL=TRUE) 
