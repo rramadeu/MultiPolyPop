@@ -1,4 +1,4 @@
-Package: diaQTLSimulation
+Package: diaQTLSimulate
 Type: Package
 Title: Simulate multi-population for linkage analysis in autopolyploids and QTL
 Version: 0.2
