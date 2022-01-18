@@ -1,4 +1,4 @@
-Package: PedigreeSimR
+Package: diaQTLSimulation
 Type: Package
 Title: Simulate multi-population for linkage analysis in autopolyploids and QTL
 Version: 0.2
