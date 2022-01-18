@@ -1,5 +1,5 @@
 # diaQTLSimulation
-Wrapper R package to coordinate simulations for classic breeder mating designs in outcrossing plants. It also simulates genotypic data from GBS. This package relies on genotypic simulations from `PedigreeSim` and uses some `updog` package functions for the simulation of the genotypes and GBS data. To use `diaQTLSimulation` you need to have Java installed in your machine (https://java.com/en/download/help/download_options.html). Please cite them properly. If you use this package you also should cite `PedigreeSim` and `updog` articles.
+Wrapper R package to coordinate simulations for classic breeder mating designs in outcrossing plants. It also simulates genotypic data from GBS. This package relies on genotypic simulations from `PedigreeSim` and uses some `updog` package functions for the simulation of the genotypes and GBS data. To use `diaQTLSimulation` you need to have Java installed in your machine (https://java.com/en/download/help/download_options.html). If you use this package you also should cite `PedigreeSim` and `updog` articles, please cite them properly.
 
 # Citation
 
