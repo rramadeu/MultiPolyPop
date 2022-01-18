@@ -1,9 +1,9 @@
-# diaQTLSimulation
-Wrapper R package to coordinate simulations for classic breeder mating designs in outcrossing plants. It also simulates genotypic data from GBS. This package relies on genotypic simulations from `PedigreeSim` and uses some `updog` package functions for the simulation of the genotypes and GBS data. To use `diaQTLSimulation` you need to have Java installed in your machine (https://java.com/en/download/help/download_options.html). If you use this package you also should cite `PedigreeSim` and `updog` articles, please cite them properly.
+# diaQTLSimulate
+Wrapper R package to coordinate simulations for classic breeder mating designs in outcrossing plants. It also simulates genotypic data from GBS. This package relies on genotypic simulations from `PedigreeSim` and uses some `updog` package functions for the simulation of the genotypes and GBS data. To use `diaQTLSimulate` you need to have Java installed in your machine (https://java.com/en/download/help/download_options.html). If you use this package you also should cite `PedigreeSim` and `updog` articles, please cite them properly.
 
 # Citation
 
-I created `diaQTLSimulation` as an auxiliary package to do the simulations for these two manuscripts:
+I created `diaQTLSimulate` as an auxiliary package to do the simulations for these two manuscripts:
 
 Amadeu, R. R., Munoz, P., Zheng, C., & Endelman, J. B. (2021). QTL Mapping in Outbred Tetraploid (and Diploid) Diallel Populations. Genetics, 219(3). [https://doi.org/10.1093/genetics/iyab124](https://doi.org/10.1093/genetics/iyab124)
 
@@ -28,8 +28,8 @@ Gerard D., & Ferrão L. (2020). Priors for Genotyping Polyploids. Bioinformatics
 # Basic usage in R
 ```R
 ## Installing this diaQTLSimulation package
-devtools::install_github("rramadeu/diaQTLSimulation")
-library(diaQTLSimulation)
+devtools::install_github("rramadeu/diaQTLSimulate")
+library(diaQTLSimulate)
 
 ## Creating a fake map (here you add a real map with haplotypes)
 map = 1:100
@@ -84,7 +84,7 @@ pedigreesimR(map,haplotypes,pedigree,ploidy=4,GBS=TRUE,GBSavgdepth = 60,GBSseq =
 # Simulation of QTL effect and genome scan internally with diaQTL
 ```R
 setwd("~/Documents/diaQTLSimulation_Example") #choose a folder for the simulations
-library(diaQTLSimulation)
+library(diaQTLSimulate)
 
 ## Simulating a scenario of 3 parents, autotetraploid, 200 individuals, 0.3 QTL h2
 ## Setting parameters
