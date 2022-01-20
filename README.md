@@ -1,12 +1,12 @@
-# diaQTLSimulate
-Wrapper R package to coordinate simulations for classic breeder mating designs in outcrossing plants. It also simulates genotypic data from GBS. This package relies on genotypic simulations from `PedigreeSim` and uses some `updog` package functions for the simulation of the genotypes and GBS data. To use `diaQTLSimulate` you need to have Java installed in your machine (https://java.com/en/download/help/download_options.html). If you use this package you also should cite `PedigreeSim` and `updog` articles, please cite them properly.
+# MultiPolyPop
+Wrapper R package to coordinate simulations for classic breeder mating designs in outcrossing plants. It also simulates genotypic data from GBS. This package relies on genotypic simulations from `PedigreeSim` and uses some `updog` package functions for the simulation of the genotypes and GBS data. To use `MultiPolyPop` you need to have Java installed in your machine (https://java.com/en/download/help/download_options.html). If you use this package you also should cite `PedigreeSim` and `updog` articles, please cite them properly.
 
 # Disclaimer
-This software was originally called `PedigreeSimR` and it has been renamed for `diaQTLSimulate`. Please note that `diaQTLSimulate` and this repository are not affiliated with `PedigreeSim` software or its authors. If you are looking for the PedigreeSim software please go to https://www.wur.nl/en/show/Software-PedigreeSim.htm.
+This software was originally called `PedigreeSimR` and it has been renamed for `MultiPolyPop`. Please note that `MultiPolyPop` and this repository are not affiliated with `PedigreeSim` software or its authors. If you are looking for the PedigreeSim software please go to https://www.wur.nl/en/show/Software-PedigreeSim.htm.
 
 # Citation
 
-I created `diaQTLSimulate` as an auxiliary package to do the simulations for these two manuscripts:
+I created `MultiPolyPop` as an auxiliary package to do the simulations for these two manuscripts:
 
 Amadeu, R. R., Munoz, P., Zheng, C., & Endelman, J. B. (2021). QTL Mapping in Outbred Tetraploid (and Diploid) Diallel Populations. Genetics, 219(3). [https://doi.org/10.1093/genetics/iyab124](https://doi.org/10.1093/genetics/iyab124)
 
@@ -31,8 +31,8 @@ Gerard D., & Ferrão L. (2020). Priors for Genotyping Polyploids. Bioinformatics
 # Basic usage in R
 ```R
 ## Installing this diaQTLSimulation package
-devtools::install_github("rramadeu/diaQTLSimulate")
-library(diaQTLSimulate)
+devtools::install_github("rramadeu/MultiPolyPop")
+library(MultiPolyPop)
 
 ## Creating a fake map (here you add a real map with haplotypes)
 map = 1:100
@@ -87,7 +87,7 @@ pedigreesimR(map,haplotypes,pedigree,ploidy=4,GBS=TRUE,GBSavgdepth = 60,GBSseq =
 # Simulation of QTL effect and genome scan internally with diaQTL
 ```R
 setwd("~/Documents/diaQTLSimulation_Example") #choose a folder for the simulations
-library(diaQTLSimulate)
+library(MultiPolyPop)
 
 ## Simulating a scenario of 3 parents, autotetraploid, 200 individuals, 0.3 QTL h2
 ## Setting parameters
