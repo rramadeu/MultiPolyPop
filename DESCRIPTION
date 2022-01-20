@@ -1,6 +1,6 @@
-Package: diaQTLSimulate
+Package: MultiPolyPop
 Type: Package
-Title: Simulate multi-population for linkage analysis in autopolyploids and QTL
+Title: Simulate multi-population of polyploids for linkage analysis and QTL
 Version: 0.2
 Author: Rodrigo R Amadeu and Chaozhi Zheng
 Maintainer: Rodrigo R Amadeu <rramadeu@ufl.edu>
