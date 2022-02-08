@@ -1,7 +1,7 @@
 Package: MultiPolyPop
 Type: Package
 Title: Simulate multi-population of polyploids for linkage analysis and QTL
-Version: 0.2
+Version: 0.3
 Author: Rodrigo R Amadeu and Chaozhi Zheng
 Maintainer: Rodrigo R Amadeu <rramadeu@ufl.edu>
 Description: Simulate multi-population for linkage analysis in autopolyploids and creates the input files for PolyOrigin software. Simulates QTL in top of the simulated genotypes and creates input files for diaQTL software. It also contains a internal wrap-up of `diaQTL::scan1` function to do the genome scanning internally.
