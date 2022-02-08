@@ -113,7 +113,7 @@ pedigree = diallel_pedigree(parents=parents,popsize=popsize)
 pedigreesimR(map,haplotypes,pedigree,ploidy=ploidy,workingfolder = "diaQTLSimulation_files")
 QTLsim(parents=parents,
        ploidy=ploidy,
-       workingfolder="PedigreeSimR_files",
+       workingfolder="diaQTLSimulation_files",
        QTLmarker=NULL,
        QTLh2=QTLh2,
        run_diaQTL=FALSE) #FALSE if just interested in creating diaQTL inputs
